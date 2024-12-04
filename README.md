@@ -21,12 +21,17 @@ A simple web application built with **Node.js**, **Express**, and **SQLite3** th
    ```bash
    git clone https://github.com/derekdacocos/web-app.git
 2. Navigate into the folder:
+   ```bash
    cd web-app
 3. Install dependencies:
+   ```bash
    npm install
 4. Start the server:
+   ```bash
    npm start
 5. Open http://localhost:3000 in your browser.
+
+---
 
 ## Live Demo
 View the deployed app here: https://task-management-system-2-bxy7.onrender.com/
