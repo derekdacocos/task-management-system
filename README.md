@@ -28,7 +28,7 @@ A simple web application built with **Node.js**, **Express**, and **SQLite3** th
    npm install
 4. Start the server:
    ```bash
-   npm start
+   node server.js
 5. Open http://localhost:3000 in your browser.
 
 ---
