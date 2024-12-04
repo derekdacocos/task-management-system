@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Add Item</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Item</title>
+    <link href="/css/style.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Add New Item</h1>
-    <form action="/add" method="POST">
-        <label>Name:</label>
-        <input type="text" name="name" required>
-        <label>Description:</label>
-        <textarea name="description"></textarea>
-        <button type="submit">Add Item</button>
-    </form>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="container mx-auto p-6 max-w-md">
+        <h1 class="text-4xl font-semibold text-center text-gray-800 mb-8">Add New Item</h1>
+
+        <form action="/add" method="POST" class="bg-white p-6 rounded-lg shadow-md space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700">Name</label>
+                <input type="text" name="name" id="name" required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="description" class="block text-gray-700">Description</label>
+                <textarea name="description" id="description" rows="4"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-3 rounded-lg shadow hover:bg-blue-600">
+                Add Item
+            </button>
+        </form>
+    </div>
 </body>
 </html>
